@@ -22,7 +22,7 @@ int welcome(void)
 	printf("/*       Any bugs found, please contact Zhenrong WANG.                */\n");
 	printf("/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */\n");
 	
-	if(timeinfo->tm_year<117&&timeinfo->tm_mon<12&&timeinfo->tm_mday<32)
+	if(timeinfo->tm_year<130&&timeinfo->tm_mon<12&&timeinfo->tm_mday<32)
 	{
 		printf("\n# CURRENT DATE AND TIME: %s\n",asctime(timeinfo));
 		return 0;
