@@ -64,7 +64,10 @@ int main(int argc, char** argv)
 	{
 		i++;
 		fscanf(fin,"%d%c%lf%c%lf%c",&type,&sep1,&v1,&sep2,&v2,&enter);
-		printf("\n%d\t%.8lf\t%.8lf",type,v1,v2);
+		if(type>0&&type<9)
+		{
+			printf("\n%d\t%.8lf\t%.8lf",type,v1,v2);
+		}
 	
 		if(type==1)
 			flag=co2_prop_calc_pt(&prop,&prop_bkup,v1,v2);
