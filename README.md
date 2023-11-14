@@ -37,6 +37,8 @@ You need a C compiler to build.
 1. Use git to clone this code: `git clone https://github.com/zhenrong-wang/co2.git`
 2. Build command example: `gcc co2-prop.c -o my-co2.exe -lm`
 
+Note: the `-lm` may not be valid for Windows or macOS. It is necessary for GNU/Linux distros.
+
 ## 3.2 Run
 
 - Copy the executable to a working directory. and open a terminal/command prompt
