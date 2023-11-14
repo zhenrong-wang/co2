@@ -24,7 +24,7 @@ int welcome(void)
 	return 0;
 }
 
-int main()
+int main(int argc, char** argv)
 {
 	co2_prop prop,prop_bkup;
 	FILE* fin;
