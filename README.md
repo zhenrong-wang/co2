@@ -1,13 +1,15 @@
-CO2-Carbon-Dioxide-Property-Calculation
+# CO2-Carbon-Dioxide-Property-Calculation
 
 # 1. Background
 
-The thermo-physical properties of CO2 is very important to researchers and engineers in various domains (energy, power, chemistry, materials ...). Usually, they rely on the [NIST Refprop](https://www.nist.gov/srd/refprop) to calculate the properties. However, Refprop is commercial and not open-source. Therefore, I wrote this code to provide an alternative to refprop.
+The thermophysical properties of CO2 are very important to researchers and engineers in various domains (energy, power, chemistry, materials ...).
+
+Usually, they rely on the [NIST Refprop](https://www.nist.gov/srd/refprop) to calculate the properties. However, Refprop is commercial and not open-source. Therefore, I wrote this code to provide an alternative to refprop.
 
 # 2. Brief Intro
 
 Program Name: High-resolution CO2 (Carbon Dioxide) Properties Calculation
-Purpose: Calculate the high-resolution thermo-physical properties at given point(s)
+Purpose: Calculate the **very-high-resolution** thermophysical properties at given point(s)
 License: MIT
 
 Technical Reference:
@@ -31,12 +33,12 @@ You need a C compiler to build.
 ### 3.2 Build Guide
 
 1. Use git to clone this code. 
-2. Build command example: gcc _CO2PC.c -o my_co2.exe
+2. Build command example: `gcc _CO2PC.c -o my_co2.exe`
 
 ## 3.2 Run
 
 - Copy the executable to a working directory. and open a terminal/command prompt
-- Create an input file named as '_input.dat' with some input data (See Section 3.3 below)
+- Create an input file named as '**_input.dat**' with some input data (See Section 3.3 below)
 - Run the executable in terminal or command prompt by the command `./my_co2.exe` (for *nix users) or `.\my_co2.exe` (for Microsoft Windows users)
 
 ## 3.3 Use
@@ -70,7 +72,7 @@ Units:
 
 ## 3.4 Output
 
-The program writes out a file name `_properties.dat` in the working directory. Here are some extra properties:
+The program writes out a file name '**_properties.dat**' in the working directory. Here are some extra properties:
 
 - Vsound: Velocity of sound
 - V_FRAC: The mass ratio of gas when the point is in dual-phase
