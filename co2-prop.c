@@ -87,7 +87,7 @@ int main(int argc, char** argv)
 			flag=co2_prop_calc_ts(&prop,v1,v2);
 		else
 		{
-			break;
+			continue;
 		}
 		if(flag==-1)
 		{
