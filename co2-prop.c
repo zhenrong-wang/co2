@@ -32,7 +32,8 @@ int main(int argc, char** argv)
 	int type,flag,flag2,i=0;
 	char sep1,sep2,enter;
 	double v1,v2;
-	
+
+	welcome();
 	fin=fopen("_input.dat","r");
 	if(fin==NULL)
 	{
