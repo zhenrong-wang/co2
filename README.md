@@ -35,13 +35,13 @@ You need a C compiler to build.
 ### 3.2 Build Guide
 
 1. Use git to clone this code: `git clone https://github.com/zhenrong-wang/co2.git`
-2. Build command example: `gcc _CO2PC.c -o my_co2.exe`
+2. Build command example: `gcc co2-prop.c -o my-co2.exe`
 
 ## 3.2 Run
 
 - Copy the executable to a working directory. and open a terminal/command prompt
-- Create an input file named as '**_input.dat**' with some input data (See Section 3.3 below)
-- Run the executable in terminal or command prompt by the command `./my_co2.exe` (for *nix users) or `.\my_co2.exe` (for Microsoft Windows users)
+- Create an input file named '**_input.dat**' with some input data (See Section 3.3 below)
+- Run the executable in the terminal or command prompt by the command `./my-co2.exe` (for *nix users) or `.\my-co2.exe` (for Microsoft Windows users)
 
 ## 3.3 Use
 
@@ -49,7 +49,7 @@ For the **_input.dat** file, you need to input the data in lines. A single line 
 
 `POINT_TYPE(int),PARAM1(float/double),PARAM2 (float/double)` 
 
-**Please seperate the params by a comma ','
+**Please separate the params by a comma ','
 
 POINT_TYPE: 
 
@@ -64,7 +64,6 @@ POINT_TYPE:
 
 Example: `1,100000,300`
 
-
 Example: `1,1e5,3e2`
 
 Units:
@@ -77,7 +76,7 @@ Units:
 
 ## 3.4 Output
 
-The program writes out a file name '**_properties.dat**' in the working directory. Here are some extra properties:
+The program writes out a file named '**_properties.dat**' in the working directory. Here are some extra properties:
 
 - Vsound: Velocity of sound
 - V_FRAC: The mass ratio of gas when the point is in dual-phase
