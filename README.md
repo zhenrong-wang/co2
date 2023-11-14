@@ -32,7 +32,7 @@ You need a C compiler to build.
 
 ### 3.2 Build Guide
 
-1. Use git to clone this code. 
+1. Use git to clone this code: `git clone https://github.com/zhenrong-wang/co2.git`
 2. Build command example: `gcc _CO2PC.c -o my_co2.exe`
 
 ## 3.2 Run
