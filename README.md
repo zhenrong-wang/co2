@@ -4,11 +4,12 @@
 
 The thermophysical properties of CO2 are very important to researchers and engineers in various domains (energy, power, chemistry, materials ...).
 
-Usually, they rely on the [NIST Refprop](https://www.nist.gov/srd/refprop) to calculate the properties. However, Refprop is commercial and not open-source. Therefore, I wrote this code to provide an alternative to refprop.
+Usually, researchers rely on the [NIST Refprop](https://www.nist.gov/srd/refprop) to calculate the properties. However, Refprop is commercial and not open-source. Therefore, I wrote this code to provide an alternative to the refprop.
 
 # 2. Brief Intro
 
 Program Name: High-resolution CO2 (Carbon Dioxide) Properties Calculation
+
 Purpose: Calculate the **very-high-resolution** thermophysical properties at given point(s)
 License: MIT
 
