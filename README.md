@@ -11,6 +11,7 @@ Usually, researchers rely on the [NIST Refprop](https://www.nist.gov/srd/refprop
 Program Name: High-resolution CO2 (Carbon Dioxide) Properties Calculation
 
 Purpose: Calculate the **very-high-resolution** thermophysical properties at given point(s)
+
 License: MIT
 
 Technical Reference:
