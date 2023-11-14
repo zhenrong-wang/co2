@@ -49,7 +49,7 @@ For the **_input.dat** file, you need to input the data in lines. A single line 
 
 `POINT_TYPE(int),PARAM1(float/double),PARAM2 (float/double)` 
 
-**Please separate the params by a comma ','
+**Please separate the params by a comma ','**
 
 POINT_TYPE: 
 
