@@ -11,23 +11,17 @@ int welcome(void)
     timeinfo=localtime(&rtime);
 	printf("/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */\n");
 	printf("/*                    CO2 Properties Calculation.                     */\n");
-	printf("/*                          VERSION 1.0(beta)                         */\n");
+	printf("/*                   VERSION 1.0(beta) LICENSE: MIT                   */\n");
 	printf("/* Author: Zhenrong WANG. zhenrongwang@live.com; K495458966(wechat).  */\n");
 	printf("/* Main function: calculating properties by given two values:         */\n");
 	printf("/*       1-pt, 2-ph, 3-ps, 4-hs, 5-tr, 6-pr, 7-th, 8-ts.              */\n"); 
 	printf("/*       Input File: _input.dat; Output File: _properties.dat.        */\n");
 	printf("/* Range: 216.15K<T<1100K     && P<=800MPa;                           */\n");
 	printf("/* NOTE: For detailed information, please read the help doc.          */\n");
-	printf("/*       This version is valid before Jan 1st, 2017.                  */\n");
 	printf("/*       Any bugs found, please contact Zhenrong WANG.                */\n");
 	printf("/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */\n");
-	
-	if(timeinfo->tm_year<130&&timeinfo->tm_mon<12&&timeinfo->tm_mday<32)
-	{
-		printf("\n# CURRENT DATE AND TIME: %s\n",asctime(timeinfo));
-		return 0;
-	}
-    return -1;
+	printf("\n# CURRENT DATE AND TIME: %s\n",asctime(timeinfo));
+	return 0;
 }
 
 int main()
@@ -37,15 +31,6 @@ int main()
 	FILE* fout;
 	int type,flag,flag2,i=0;
 	double v1,v2;
-	
-	if(welcome()==-1)
-	{
-		printf("\n! FATAL ERROR: license expired. Please contact the author!\n! Please press any key to exit.\n");
-		printf("\n@ Any problems found, please contact the author.\n@ Zhenrong Wang, zhenrongwang@live.com, K495458966(wechat).\n@ All rights reserved.\n");
-		fflush(stdin); 
-		getchar();
-		return -2;
-	}
 	
 	fin=fopen("_input.dat","r");
 	if(fin==NULL)
