@@ -58,7 +58,7 @@ int main(int argc, char** argv)
 	
 	fprintf(fout,"\tPRES\t\tTEMP\t\tDENS\t\tu\t\th\t\ts\t\tCv\t\tCp\t\tVsound\t\tV_FRAC\t\tVISC\t\tTHCOND\n");
 	fprintf(fout,"\tMPa\t\tK\t\tkg/m^3\t\tkJ/kg\t\tkJ/kg\t\tkJ/(kg*K)\tkJ/(kg*K)\tkJ/(kg*K)\tm/s\t\t-\t\t10^-6Pa.s\tmW/(m.K)\n");
-	do
+	while(!feof(fin))
 	{
 		i++;
 		fscanf(fin,"%d,%lf,%lf",&type,&v1,&v2);
@@ -101,7 +101,7 @@ int main(int argc, char** argv)
 			calc_trans_prop(&prop);
 			fprintf(fout,"%d\t%8.4lf\t%8.4lf\t%10.4lf\t%8.4lf\t%8.4lf\t%8.4lf\t%8.4lf\t%10.5lf\t%10.5lf\t%8.4lf\t%8.6lf\t%8.6lf\n",i,prop.pres/1e6,prop.temp,prop.dens,prop.spe_ener/1000,prop.spe_enth/1000,prop.spe_entr/1000,prop.spe_h_v/1000,prop.spe_h_p/1000,prop.speed_sound,prop.vf,prop.viscous,prop.thcond);
 		}	
-	}while(!feof(fin));	
+	}	
 	
 	printf("\n\n# Calculation finished. Please check _properties.dat for results.\n# Press any key to exit.\n\n@ Any problems found, please contact the author.\n@ Zhenrong Wang, zhenrongwang@live.com, K495458966(wechat).\n@ All rights reserved.\n");
 	fclose(fin);
