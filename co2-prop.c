@@ -30,6 +30,7 @@ int main(int argc, char** argv)
 	FILE* fin;
 	FILE* fout;
 	int type,flag,flag2,i=0;
+	char sep1,sep2,enter;
 	double v1,v2;
 	
 	fin=fopen("_input.dat","r");
@@ -61,7 +62,7 @@ int main(int argc, char** argv)
 	while(!feof(fin))
 	{
 		i++;
-		fscanf(fin,"%d,%lf,%lf",&type,&v1,&v2);
+		fscanf(fin,"%d%c%lf%c%lf%c",&type,&sep1,&v1,&sep2,&v2,&enter);
 		printf("\n%d\t%.8lf\t%.8lf",type,v1,v2);
 	
 		if(type==1)
@@ -82,11 +83,16 @@ int main(int argc, char** argv)
 		else if(type==7)
 			flag=co2_prop_calc_th(&prop,v1,v2);
 		else if(type==8)
-			flag=co2_prop_calc_ts(&prop,v1,v2);			
+			flag=co2_prop_calc_ts(&prop,v1,v2);
+		else
+		{
+			break;
+		}
 		if(flag==-1)
 		{
 			printf("\n! WARNING: Calculation error at line # %d of the input file.\n", i);
 			fprintf(fout,"%d\t-1\n",i);
+			type=-1;
 			continue;
 		}
 		else if(flag==1)
@@ -95,11 +101,13 @@ int main(int argc, char** argv)
 			calc_trans_prop(&prop_bkup);
 			fprintf(fout,"%d\t%8.4lf*\t%8.4lf\t%10.4lf\t%8.4lf\t%8.4lf\t%8.4lf\t%8.4lf\t%10.5lf\t%10.5lf\t%8.4lf\t%8.6lf\t%8.6lf\n",i,prop.pres/1e6,prop.temp,prop.dens,prop.spe_ener/1000,prop.spe_enth/1000,prop.spe_entr/1000,prop.spe_h_v/1000,prop.spe_h_p/1000,prop.speed_sound,prop.vf,prop.viscous,prop.thcond);
 			fprintf(fout,"\t%8.4lf*\t%8.4lf\t%10.4lf\t%8.4lf\t%8.4lf\t%8.4lf\t%8.4lf\t%10.5lf\t%10.5lf\t%8.4lf\t%8.6lf\t%8.6lf\n",prop_bkup.pres/1e6,prop_bkup.temp,prop_bkup.dens,prop_bkup.spe_ener/1000,prop_bkup.spe_enth/1000,prop_bkup.spe_entr/1000,prop_bkup.spe_h_v/1000,prop_bkup.spe_h_p/1000,prop_bkup.speed_sound,prop_bkup.vf,prop_bkup.viscous,prop_bkup.thcond);
+			type=-1;
 		}
 		else
 		{
 			calc_trans_prop(&prop);
 			fprintf(fout,"%d\t%8.4lf\t%8.4lf\t%10.4lf\t%8.4lf\t%8.4lf\t%8.4lf\t%8.4lf\t%10.5lf\t%10.5lf\t%8.4lf\t%8.6lf\t%8.6lf\n",i,prop.pres/1e6,prop.temp,prop.dens,prop.spe_ener/1000,prop.spe_enth/1000,prop.spe_entr/1000,prop.spe_h_v/1000,prop.spe_h_p/1000,prop.speed_sound,prop.vf,prop.viscous,prop.thcond);
+			type=-1;
 		}	
 	}	
 	
