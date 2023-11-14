@@ -45,7 +45,7 @@ You need a C compiler to build.
 
 ## 3.3 Use
 
-In the _input.dat file, you need to input the data in lines. A single line refers to a point. Format
+For the **_input.dat** file, you need to input the data in lines. A single line refers to a point. Strict format:
 
 `POINT_TYPE(int),PARAM1(float/double),PARAM2 (float/double)` 
 
@@ -63,6 +63,9 @@ POINT_TYPE:
 - 8 Temperature and Specific Entropy
 
 Example: `1,100000,300`
+
+
+Example: `1,1e5,3e2`
 
 Units:
 
