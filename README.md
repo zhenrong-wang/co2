@@ -45,7 +45,7 @@ You need a C compiler to build.
 
 In the _input.dat file, you need to input the data in lines. A single line refers to a point. Format
 
-`POINT_TYPE(int)  PARAM1(float/double) PARAM2 (float/double)` 
+`POINT_TYPE(int),PARAM1(float/double),PARAM2 (float/double)` 
 
 **Please seperate the params by a comma ','
 
