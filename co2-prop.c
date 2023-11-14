@@ -10,8 +10,8 @@ int welcome(void)
     time(&rtime);
     timeinfo=localtime(&rtime);
 	printf("/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */\n");
-	printf("/*                    CO2 Properties Calculation.                     */\n");
-	printf("/*                   VERSION 1.0(beta) LICENSE: MIT                   */\n");
+	printf("/*                    CO2 Properties Calculation                      */\n");
+	printf("/*                  VERSION 1.0(beta) LICENSE: MIT                    */\n");
 	printf("/* Author: Zhenrong WANG. zhenrongwang@live.com; K495458966(wechat).  */\n");
 	printf("/* Main function: calculating properties by given two values:         */\n");
 	printf("/*       1-pt, 2-ph, 3-ps, 4-hs, 5-tr, 6-pr, 7-th, 8-ts.              */\n"); 
