@@ -1,10 +1,10 @@
-# CO2-Carbon-Dioxide-Property-Calculation
+# CO2: Carbon-Dioxide Thermophysical Property Calculation
 
 # 1. Background
 
 The thermophysical properties of CO2 are very important to researchers and engineers in various domains (energy, power, chemistry, materials ...).
 
-Usually, researchers and engineers rely on the [NIST Refprop](https://www.nist.gov/srd/refprop) to calculate the properties. However, Refprop is commercial and not open-source. Therefore, I wrote this code to provide an alternative to the refprop.
+Usually, researchers and engineers rely on the [NIST Refprop](https://www.nist.gov/srd/refprop) to calculate the properties. However, Refprop is commercial and not open-source. Therefore, I wrote this code to provide an alternative to the Refprop.
 
 # 2. Brief Intro
 
