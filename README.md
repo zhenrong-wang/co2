@@ -41,9 +41,13 @@ Note: the `-lm` may not be valid for Windows or macOS. It is necessary for GNU/L
 
 ## 3.2 Run
 
-- Copy the executable to a working directory. and open a terminal/command prompt
-- Create an input file named '**_input.dat**' with some input data (See Section 3.3 below)
-- Run the executable in the terminal or command prompt by the command `./my-co2.exe` (for *nix users) or `.\my-co2.exe` (for Microsoft Windows users)
+Suppose the working directory is `/home/amber/co2`
+
+Suppose the absolute path of the executable is `/home/amber/bin/my-co2.exe`
+
+- `$ cd /home/amber/co2`
+- `$ vim _input.dat` # Create an input file named '**_input.dat**' with some input data (See Section 3.3 below)
+- `/home/amber/bin/my-co2.exe`
 
 ## 3.3 Use
 
@@ -87,7 +91,7 @@ The program writes out a file named '**_properties.dat**' in the working directo
 
 # 4 Bugs and Communications
 
-This code was written years ago, I didn't continuously develop it. Therefore, bugs may occur. 
+This code was written years ago, and I didn't continuously develop it. Therefore, bugs may occur. 
 
 If you are interested in this project, please submit issues to this repo. I'd be glad to communicate on any issues.
 
