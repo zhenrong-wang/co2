@@ -41,13 +41,26 @@ Note: the `-lm` may not be valid for Windows or macOS. It is necessary for GNU/L
 
 ## 3.2 Run
 
+### An Example for UNIX-like OS:
+
 Suppose the working directory is `/home/amber/co2`
 
 Suppose the absolute path of the executable is `/home/amber/bin/my-co2.exe`
 
 - `$ cd /home/amber/co2`
 - `$ vim _input.dat` # Create an input file named '**_input.dat**' with some input data (See Section 3.3 below)
-- `/home/amber/bin/my-co2.exe`
+- `$ /home/amber/bin/my-co2.exe`
+
+### An Example for Windows:
+
+Suppose the working directory is `C:\Users\amber\co2`
+
+Suppose the absolute path of the executable is `C:\Users\amber\bin\my-co2.exe`
+
+- Open a Command Prompt Window
+- `cd C:\Users\amber\co2`
+- `notepad _input.dat`
+- `C:\Users\amber\bin\my-co2.exe`
 
 ## 3.3 Use
 
