@@ -8,13 +8,13 @@ Usually, researchers and engineers rely on the [NIST Refprop](https://www.nist.g
 
 # 2. Brief Intro
 
-Program Name: High-resolution CO2 (Carbon Dioxide) Properties Calculation
+**Program Name**: High-resolution CO2 (Carbon Dioxide) Properties Calculation
 
-Purpose: Calculate the **very-high-resolution** thermophysical properties at given point(s)
+**Purpose**: Calculate the **very-high-resolution** thermophysical properties at given point(s)
 
-License: MIT
+**License**: MIT
 
-Technical Reference:
+**Technical Reference**:
 
 - R. Span, W. Wagner, A New Equation of State for Carbon Dioxide Covering the Fluid Region from the Triple –Point Temperature to 1100K at Pressures up to 800MPa, J. Phys. Chem. Ref. Data, Vol 25, No.6, 1996
 - Marcia L Huber, Marc J Assel, R. A. Perkins, Reference Correlation of the Thermal Conductivity of Carbon Dioxide from the Triple Point to 1100K and up to 200MPa. Joursssnal of Physical and Chemical References Date. Feb. 2016
@@ -37,7 +37,7 @@ You need a C compiler to build.
 1. Use git to clone this code: `git clone https://github.com/zhenrong-wang/co2.git`
 2. Build command example: `gcc co2-prop.c -o my-co2.exe -lm`
 
-Note: the `-lm` may not be valid for Windows or macOS. It is necessary for GNU/Linux distros.
+**Note**: the `-lm` may not be valid for Windows or macOS. It is necessary for GNU/Linux distros.
 
 ## 3.2 Run
 
