@@ -1,3 +1,9 @@
+/*
+ *This code is distributed under the license: MIT License
+ * Originally written by Zhenrong WANG
+ * mailto: zhenrongwang@live.com
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
