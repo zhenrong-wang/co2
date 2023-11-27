@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "co2_property_calc.h"
-#include "co2_property_calc_origeqns.c"
+#include "co2_property_calc_origeqns.h"
 #define ERR 1e-6
 
 const double tab1[5]={
