@@ -1,3 +1,0 @@
-	PRES		TEMP		DENS		u		h		s		Cv		Cp		Vsound		V_FRAC		VISC		THCOND
-	MPa		K		kg/m^3		kJ/kg		kJ/kg		kJ/(kg*K)	kJ/(kg*K)	kJ/(kg*K)	m/s		-		10^-6Pa.s	mW/(m.K)
-1	  0.1000	320.0000	    1.6606	-42.3273	 17.8905	  0.0612	  0.6791	   0.87151	 277.44770	 -1.0000	15.983471	18.407276

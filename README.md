@@ -41,6 +41,27 @@ You need a C compiler to build.
 
 ## 3.2 Run
 
+### Run the Test Data
+
+Suppose you have followed the steps above and built the my-co2.exe in the source code folder.
+
+- `cd test`
+- `../my-co2.exe` (**UNIX-like OS**) or `..\my-co2.exe` (**Microsoft Windows**)
+
+If you see the output below, congrats, you've built the binary successfully.
+
+    ...
+
+    # Please press ENTER to start calculation:
+
+    1       100000.00000000 320.00000000
+
+    # Calculation finished. Please check _properties.dat for results.
+    # Press any key to exit.
+
+    @ Any problems found, please contact the author.
+    @ Zhenrong Wang, zhenrongwang@live.com.
+
 ### An Example for UNIX-like OS:
 
 Suppose the working directory is `/home/amber/co2`

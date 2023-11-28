@@ -45,7 +45,7 @@ int main(int argc, char** argv)
 	if(fin==NULL)
 	{
 		printf("\n! FATAL ERROR: input file not found.\n! Program abort.\n! Please press any key to exit.");
-		printf("\n@ Any problems found, please contact the author.\n@ Zhenrong Wang, zhenrongwang@live.com, K495458966(wechat).\n@ All rights reserved.\n");		
+		printf("\n@ Any problems found, please contact the author.\n@ Zhenrong Wang, zhenrongwang@live.com.\n");		
 		fflush(stdin);
 		getchar();
 		return -1;
@@ -54,7 +54,7 @@ int main(int argc, char** argv)
 	if(fout==NULL)
 	{
 		printf("\n! FATAL ERROR: cannot creat output file.\n! Program abort.\n! Please press any key to exit.");
-		printf("\n@ Any problems found, please contact the author.\n@ Zhenrong Wang, zhenrongwang@live.com, K495458966(wechat).\n@ All rights reserved.\n");
+		printf("\n@ Any problems found, please contact the author.\n@ Zhenrong Wang, zhenrongwang@live.com.\n");
 		fclose(fin);
 		fflush(stdin);
 		getchar();
@@ -122,7 +122,7 @@ int main(int argc, char** argv)
 		}	
 	}	
 	
-	printf("\n\n# Calculation finished. Please check _properties.dat for results.\n# Press any key to exit.\n\n@ Any problems found, please contact the author.\n@ Zhenrong Wang, zhenrongwang@live.com, K495458966(wechat).\n@ All rights reserved.\n");
+	printf("\n\n# Calculation finished. Please check _properties.dat for results.\n# Press any key to exit.\n\n@ Any problems found, please contact the author.\n@ Zhenrong Wang, zhenrongwang@live.com.\n");
 	fclose(fin);
 	fclose(fout);
 	fflush(stdin);
